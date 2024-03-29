@@ -9,7 +9,23 @@ import SwiftUI
 
 struct AccountNumberCameraView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Rectangle()
+                    .frame(maxWidth:.infinity, maxHeight: 300)
+                
+                Spacer().frame(height: 80)
+                
+                Label("계좌번호 인식", systemImage: "camera.viewfinder")
+                    .font(.title)
+                Text("인식된 계좌번호 없음")
+                    .bold()
+                    .font(.title)
+                    .foregroundColor(.green)
+                    .padding()
+            }
+            .navigationTitle("계좌번호 인식")
+        }
     }
 }
 

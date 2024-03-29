@@ -8,34 +8,29 @@
 import SwiftUI
 
 struct MorePageView: View {
-    @State private var somethingIsOn = false
-    @State private var somethingElseIsOn = false
-    @State private var anotherThingIsOn = false
-    
-    @State private var howMuch = 0.0
-    @State private var amount = 0.0
-    @State private var quantity = 0.0
+    @State private var isSheetPresented = false
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Form {
-                    Section {
-                        Image(systemName: "photo")
-                            .resizable()
-                            .scaledToFit()
-                        
-                        Image(systemName: "photo")
-                            .resizable()
-                            .scaledToFit()
-                    } header: {
-                        Text("Photos")
-                    }
-                    
-                    Button("Tap me") {
-                        
+            Form {
+                Section(header: Text("쏠쏠한 기능")) {
+                    NavigationLink(destination: AccountNumberCameraView()) {
+                        HStack {
+                            Image(systemName: "camera.fill")
+                                .foregroundColor(.primary)
+                            Text("계좌번호 인식")
+                        }
                     }
                 }
+                
+                NavigationLink(destination: DeveloperInfoView()) {
+                    HStack {
+                        Image(systemName: "hammer.fill")
+                            .foregroundColor(.blue)
+                        Text("개발자 정보")
+                    }
+                }
+                
             }
             .navigationTitle("더보기")
         }

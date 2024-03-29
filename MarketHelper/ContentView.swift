@@ -29,10 +29,10 @@ struct ContentView: View {
                     Text("근처")
                 }
             
-            MypageView()
+            MorePageView()
                 .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("내 정보")
+                    Image(systemName: "ellipsis")
+                    Text("더보기")
                 }
         }
     }
