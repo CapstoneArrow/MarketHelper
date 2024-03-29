@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ItemView: View {
     var name: String // 제목
-    @State private var isStarred: Bool = false // 즐겨찾기 버튼 활성화 및 비활성화
+    @State private var isStarred: Bool = true // 즐겨찾기 버튼 활성화 및 비활성화 (기본은 활성화)
     
     var body: some View {
         HStack {

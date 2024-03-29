@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    @State var isStarred: Bool = false
+    @State var isStarred: Bool = true
     
     var body: some View {
         NavigationStack {
