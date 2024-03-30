@@ -14,7 +14,7 @@ struct MorePageView: View {
         NavigationStack {
             Form {
                 Section(header: Text("쏠쏠한 기능")) {
-                    NavigationLink(destination: AccountNumberCameraView()) {
+                    NavigationLink(destination: AccountMainCameraView()) {
                         HStack {
                             Image(systemName: "camera.fill")
                                 .foregroundColor(.primary)
