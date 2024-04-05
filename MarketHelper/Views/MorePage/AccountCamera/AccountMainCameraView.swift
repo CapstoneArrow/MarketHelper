@@ -13,6 +13,7 @@ struct AccountMainCameraView: View {
     @State private var isDeviceCapacity = false
     @State private var showDeviceNotCapacityAlert = false
     @State private var scanResults: String = ""
+    @State private var isCopyButtonTapped = false
     
     var body: some View {
         NavigationStack {
@@ -22,16 +23,23 @@ struct AccountMainCameraView: View {
                 
                 Text("계좌번호 인식 결과")
                     .font(.title2)
-                    .padding()
+                    .fontWeight(.semibold)
                 
                 VStack {
                     Text(scanResults)
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .bold()
                         .padding()
+                        .background(Color(.orange))
+                        .foregroundColor(.white)
+                        .cornerRadius(15)
                     
                     Button {
                         UIPasteboard.general.string = scanResults
+                        isCopyButtonTapped.toggle()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                            isCopyButtonTapped.toggle()
+                        }
                     } label: {
                         HStack {
                             Image(systemName: "doc.on.doc.fill")
@@ -40,9 +48,13 @@ struct AccountMainCameraView: View {
                             Text("복사하기")
                                 .font(.subheadline)
                         }
-                        
+                        .scaleEffect(isCopyButtonTapped ? 1.2 : 1.0)
+                        .padding()
                     }
+                    .animation(.interpolatingSpring, value: isCopyButtonTapped)
                 }
+                
+                Spacer()
                 
                 Button {
                     if isDeviceCapacity {
@@ -60,7 +72,6 @@ struct AccountMainCameraView: View {
                     }
                     .foregroundColor(.green)
                     .padding()
-                    
                 }
                 
                 Spacer()
@@ -69,7 +80,7 @@ struct AccountMainCameraView: View {
             .sheet(isPresented: $showCameraScannerView) {
                 AccountNumberCameraView(startScanning: $showCameraScannerView, scanResult: $scanResults)
             }
-            .alert("설정에서 카메라 접근을 허용해주세요.", isPresented: $showDeviceNotCapacityAlert, actions: {})
+            .alert("카메라에 접근할 수 없습니다. 설정에서 카메라 접근을 허용해주세요.", isPresented: $showDeviceNotCapacityAlert, actions: {})
             .onAppear {
                 isDeviceCapacity = (DataScannerViewController.isSupported &&                         DataScannerViewController.isAvailable)
             }
