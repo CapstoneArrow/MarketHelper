@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A11F93DE2BB849ED002BE5EF /* AccountNumberCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F93DD2BB849ED002BE5EF /* AccountNumberCameraViewController.swift */; };
 		A11F93E02BB86092002BE5EF /* AccountMainCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F93DF2BB86092002BE5EF /* AccountMainCameraView.swift */; };
+		A14B91EA2BC147A400C281C1 /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B91E92BC147A400C281C1 /* NearbyView.swift */; };
+		A14B91ED2BC152C600C281C1 /* AccessCurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B91EC2BC152C600C281C1 /* AccessCurrentLocation.swift */; };
 		A1C559DA2BB5BB25003D9F6E /* AccountNumberCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C559D92BB5BB25003D9F6E /* AccountNumberCameraView.swift */; };
 		A1C559DD2BB5BFF7003D9F6E /* DeveloperInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C559DC2BB5BFF7003D9F6E /* DeveloperInfoView.swift */; };
 		A1CA64652BBF777C00E2C802 /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CA64642BBF777C00E2C802 /* HomeDetailView.swift */; };
@@ -20,7 +22,7 @@
 		A1CBA21F2BB45BBA00ED0C1A /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBA21E2BB45BBA00ED0C1A /* ItemView.swift */; };
 		A1CBA2212BB45BC100ED0C1A /* ItemDetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBA2202BB45BC100ED0C1A /* ItemDetailMapView.swift */; };
 		A1CBA2232BB45BCC00ED0C1A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBA2222BB45BCC00ED0C1A /* FavoritesView.swift */; };
-		A1CBA2252BB45BD200ED0C1A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBA2242BB45BD200ED0C1A /* MapView.swift */; };
+		A1CBA2252BB45BD200ED0C1A /* OldMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBA2242BB45BD200ED0C1A /* OldMapView.swift */; };
 		A1CBA2272BB45BD800ED0C1A /* MorePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBA2262BB45BD800ED0C1A /* MorePageView.swift */; };
 		A1D6BBAB2BBFE4AF002EBDE0 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6BBAA2BBFE4AF002EBDE0 /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		A11F93DD2BB849ED002BE5EF /* AccountNumberCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberCameraViewController.swift; sourceTree = "<group>"; };
 		A11F93DF2BB86092002BE5EF /* AccountMainCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMainCameraView.swift; sourceTree = "<group>"; };
+		A14B91E92BC147A400C281C1 /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		A14B91EC2BC152C600C281C1 /* AccessCurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCurrentLocation.swift; sourceTree = "<group>"; };
 		A1C559D92BB5BB25003D9F6E /* AccountNumberCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberCameraView.swift; sourceTree = "<group>"; };
 		A1C559DC2BB5BFF7003D9F6E /* DeveloperInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoView.swift; sourceTree = "<group>"; };
 		A1CA64642BBF777C00E2C802 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
@@ -41,7 +45,7 @@
 		A1CBA21E2BB45BBA00ED0C1A /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		A1CBA2202BB45BC100ED0C1A /* ItemDetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailMapView.swift; sourceTree = "<group>"; };
 		A1CBA2222BB45BCC00ED0C1A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		A1CBA2242BB45BD200ED0C1A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A1CBA2242BB45BD200ED0C1A /* OldMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldMapView.swift; sourceTree = "<group>"; };
 		A1CBA2262BB45BD800ED0C1A /* MorePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePageView.swift; sourceTree = "<group>"; };
 		A1D6BBAA2BBFE4AF002EBDE0 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,12 +71,29 @@
 			path = AccountCamera;
 			sourceTree = "<group>";
 		};
+		A14B91EB2BC1523600C281C1 /* OldCode */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBA2242BB45BD200ED0C1A /* OldMapView.swift */,
+			);
+			path = OldCode;
+			sourceTree = "<group>";
+		};
+		A14B91EE2BC152FA00C281C1 /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				A14B91E92BC147A400C281C1 /* NearbyView.swift */,
+				A14B91EC2BC152C600C281C1 /* AccessCurrentLocation.swift */,
+			);
+			path = Nearby;
+			sourceTree = "<group>";
+		};
 		A1C559D82BB5B807003D9F6E /* MorePage */ = {
 			isa = PBXGroup;
 			children = (
 				A1CBA2262BB45BD800ED0C1A /* MorePageView.swift */,
 				A11F93DC2BB8430C002BE5EF /* AccountCamera */,
-				A1CBA2242BB45BD200ED0C1A /* MapView.swift */,
+				A14B91EE2BC152FA00C281C1 /* Nearby */,
 				A1C559DC2BB5BFF7003D9F6E /* DeveloperInfoView.swift */,
 			);
 			path = MorePage;
@@ -129,6 +150,7 @@
 				A1C559DB2BB5BD27003D9F6E /* Favorites */,
 				A1CBA21B2BB45BA100ED0C1A /* HomeView */,
 				A1C559D82BB5B807003D9F6E /* MorePage */,
+				A14B91EB2BC1523600C281C1 /* OldCode */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,12 +237,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CBA2252BB45BD200ED0C1A /* MapView.swift in Sources */,
+				A1CBA2252BB45BD200ED0C1A /* OldMapView.swift in Sources */,
 				A1CBA2272BB45BD800ED0C1A /* MorePageView.swift in Sources */,
 				A1D6BBAB2BBFE4AF002EBDE0 /* ItemDetailView.swift in Sources */,
 				A1C559DA2BB5BB25003D9F6E /* AccountNumberCameraView.swift in Sources */,
+				A14B91ED2BC152C600C281C1 /* AccessCurrentLocation.swift in Sources */,
 				A1CBA21D2BB45BB100ED0C1A /* HomeView.swift in Sources */,
 				A1CBA2212BB45BC100ED0C1A /* ItemDetailMapView.swift in Sources */,
+				A14B91EA2BC147A400C281C1 /* NearbyView.swift in Sources */,
 				A1CA64652BBF777C00E2C802 /* HomeDetailView.swift in Sources */,
 				A11F93DE2BB849ED002BE5EF /* AccountNumberCameraViewController.swift in Sources */,
 				A1CBA2232BB45BCC00ED0C1A /* FavoritesView.swift in Sources */,

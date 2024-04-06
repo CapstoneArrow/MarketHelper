@@ -17,7 +17,7 @@ extension CLLocationCoordinate2D {
     static let sampleMarket = CLLocationCoordinate2D(latitude: 37.878070, longitude: 127.725662) // 춘천중앙시장
 }
 
-struct MapView: View {
+struct OldMapView: View {
     @StateObject private var viewModel = MapViewModel()
     @State private var trackingMode: MapUserTrackingMode = .follow
     
@@ -27,6 +27,10 @@ struct MapView: View {
                 Map(coordinateRegion: $viewModel.region,
                     showsUserLocation: true,
                     userTrackingMode: $trackingMode)
+                .mapControls {
+                    MapCompass()
+                    MapPitchToggle()
+                }
             }
             .navigationTitle("내 근처 정보")
             .onAppear {
@@ -81,5 +85,5 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
 }
 
 #Preview {
-    MapView()
+    OldMapView()
 }
