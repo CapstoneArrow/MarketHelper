@@ -82,7 +82,7 @@ struct AccountMainCameraView: View {
             }
             .alert("카메라에 접근할 수 없습니다. 설정에서 카메라 접근을 허용해주세요.", isPresented: $showDeviceNotCapacityAlert, actions: {})
             .onAppear {
-                isDeviceCapacity = (DataScannerViewController.isSupported &&                         DataScannerViewController.isAvailable)
+                isDeviceCapacity = (DataScannerViewController.isSupported && DataScannerViewController.isAvailable)
             }
             .navigationTitle("계좌번호 인식")
         }
@@ -93,3 +93,4 @@ struct AccountMainCameraView: View {
 #Preview {
     AccountMainCameraView()
 }
+

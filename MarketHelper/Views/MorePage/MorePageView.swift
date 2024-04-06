@@ -21,6 +21,7 @@ struct MorePageView: View {
                             Text("계좌번호 인식")
                         }
                     }
+                    
                     NavigationLink(destination: NearbyView()) {
                         HStack {
                             Image(systemName: "location.fill")

@@ -34,3 +34,4 @@ struct AccountNumberCameraView: View {
 #Preview {
     AccountNumberCameraView(startScanning: .constant(true), scanResult: .constant(""))
 }
+
