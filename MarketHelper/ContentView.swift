@@ -22,12 +22,6 @@ struct ContentView: View {
                     Text("즐겨찾기")
                 }
             
-            MapView()
-                .tabItem {
-                    Image(systemName: "location.fill")
-                    Text("근처")
-                }
-            
             MorePageView()
                 .tabItem {
                     Image(systemName: "ellipsis")

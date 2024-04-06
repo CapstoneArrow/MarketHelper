@@ -20,7 +20,6 @@ extension CLLocationCoordinate2D {
 struct MapView: View {
     @StateObject private var viewModel = MapViewModel()
     @State private var trackingMode: MapUserTrackingMode = .follow
-
     
     var body: some View {
         NavigationStack {
@@ -29,7 +28,7 @@ struct MapView: View {
                     showsUserLocation: true,
                     userTrackingMode: $trackingMode)
             }
-            .navigationTitle("근처")
+            .navigationTitle("내 근처 정보")
             .onAppear {
                 viewModel.checkIfLocationServicesIsEnabled()
             }
@@ -56,7 +55,7 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
             locationManager?.requestWhenInUseAuthorization()
             startReceivingLocationUpdates()
         } else {
-            // Handle the case where location services are not enabled
+            print("위치 서비스에 접근 할 수 없습니다. 설정에서 위치 서비스를 허용해주세요.")
         }
     }
 

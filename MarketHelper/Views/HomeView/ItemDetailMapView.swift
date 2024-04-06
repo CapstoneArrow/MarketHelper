@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct ItemMapView: View {
+struct ItemDetailMapView: View {
     var locationName: String
     var locationLatitude: CLLocationDegrees
     var locationLongitude: CLLocationDegrees
@@ -28,5 +28,5 @@ struct ItemMapView: View {
 
 
 #Preview {
-    ItemMapView(locationName: "한림대학교", locationLatitude: 37.886734, locationLongitude: 127.740939)
+    ItemDetailMapView(locationName: "한림대학교", locationLatitude: 37.886734, locationLongitude: 127.740939)
 }

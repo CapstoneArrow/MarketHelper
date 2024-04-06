@@ -21,16 +21,24 @@ struct MorePageView: View {
                             Text("계좌번호 인식")
                         }
                     }
-                }
-                
-                NavigationLink(destination: DeveloperInfoView()) {
-                    HStack {
-                        Image(systemName: "hammer.fill")
-                            .foregroundColor(.blue)
-                        Text("개발자 정보")
+                    NavigationLink(destination: MapView()) {
+                        HStack {
+                            Image(systemName: "location.fill")
+                                .foregroundColor(.blue)
+                            Text("내 근처 정보")
+                        }
                     }
                 }
                 
+                Section(header: Text("정보")) {
+                    NavigationLink(destination: DeveloperInfoView()) {
+                        HStack {
+                            Image(systemName: "hammer.fill")
+                                .foregroundColor(.secondary)
+                            Text("개발자 정보")
+                        }
+                    }
+                }
             }
             .navigationTitle("더보기")
         }
