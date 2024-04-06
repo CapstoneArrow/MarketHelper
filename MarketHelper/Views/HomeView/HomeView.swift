@@ -30,11 +30,8 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("홈")
-#if os(iOS)
             .searchable(text: $searchInsideHomeView.searchText,
-            
                         placement: .navigationBarDrawer(displayMode: .automatic))
-#endif
         }
         
     }
