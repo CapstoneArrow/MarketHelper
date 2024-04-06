@@ -16,17 +16,17 @@ struct HomeView: View {
             VStack {
                 // Sample Data
                 List {
-                    NavigationLink(destination: ItemDetailView()) {
+                    NavigationLink(destination: ItemDetailView(navigationTitle: "한림대학교 공학관", locationName: "춘천시")) {
                         ItemView(name: "한림대학교 공학관", whereTheMarketIs: "춘천시")
                     }
                     
-                    NavigationLink(destination: ItemDetailView()) {
-                        ItemView(name: "춘천서부시장", whereTheMarketIs: "춘천시")
-                    }
-                    
-                    NavigationLink(destination: ItemDetailView()) {
-                        ItemView(name: "춘천중앙시장", whereTheMarketIs: "춘천시")
-                    }
+//                    NavigationLink(destination: ItemDetailView()) {
+//                        ItemView(name: "춘천서부시장", whereTheMarketIs: "춘천시")
+//                    }
+//                    
+//                    NavigationLink(destination: ItemDetailView()) {
+//                        ItemView(name: "춘천중앙시장", whereTheMarketIs: "춘천시")
+//                    }
                 }
             }
             .navigationTitle("홈")

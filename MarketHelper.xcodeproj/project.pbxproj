@@ -72,6 +72,7 @@
 		A14B91EB2BC1523600C281C1 /* OldCode */ = {
 			isa = PBXGroup;
 			children = (
+				A14B91EC2BC152C600C281C1 /* AccessCurrentLocation.swift */,
 				A1CBA2242BB45BD200ED0C1A /* OldMapView.swift */,
 			);
 			path = OldCode;
@@ -81,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				A14B91E92BC147A400C281C1 /* NearbyView.swift */,
-				A14B91EC2BC152C600C281C1 /* AccessCurrentLocation.swift */,
 			);
 			path = Nearby;
 			sourceTree = "<group>";

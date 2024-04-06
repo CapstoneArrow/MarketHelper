@@ -10,8 +10,6 @@ import MapKit
 
 struct NearbyView: View {
     @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
-//    @StateObject private var locationManager = LocationManager()
-//    @State private var region = MKCoordinateRegion()
     
     var body: some View {
         NavigationStack {
