@@ -30,7 +30,6 @@ struct DeveloperInfoView: View {
                 .padding()
                 
                 HStack {
-                    
                     VStack(alignment: .leading) {
                         DeveloperName(name: "최종현", dept: "AI의료융합전공")
                         DeveloperName(name: "김재원", dept: "빅데이터학과")
@@ -41,13 +40,10 @@ struct DeveloperInfoView: View {
                     .padding([.leading])
                     Spacer()
                 }
-                
                 Spacer()
-                
             }
             .navigationTitle("개발자 정보")
         }
-        
     }
 }
 
