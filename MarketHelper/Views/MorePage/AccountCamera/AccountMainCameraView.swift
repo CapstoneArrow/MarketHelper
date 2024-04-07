@@ -18,21 +18,15 @@ struct AccountMainCameraView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
                 Spacer()
                 
-                Text("계좌번호 인식 결과")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                
-                VStack {
+                HStack {
                     Text(scanResults)
+                        .padding(7)
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .bold()
-                        .padding()
-                        .background(Color(.orange))
-                        .foregroundColor(.white)
-                        .cornerRadius(15)
+                        .frame(minWidth: 250, maxWidth: .infinity)
+                        .fixedSize(horizontal: false, vertical: true)
                     
                     Button {
                         UIPasteboard.general.string = scanResults
@@ -43,16 +37,19 @@ struct AccountMainCameraView: View {
                     } label: {
                         HStack {
                             Image(systemName: "doc.on.doc.fill")
-                                .font(.subheadline)
-                                .foregroundColor(.accentColor)
-                            Text("복사하기")
-                                .font(.subheadline)
+                                .font(.title2)
+                                .foregroundColor(.blue)
                         }
                         .scaleEffect(isCopyButtonTapped ? 1.2 : 1.0)
                         .padding()
                     }
                     .animation(.interpolatingSpring, value: isCopyButtonTapped)
                 }
+                .background(Rectangle()
+                    .foregroundColor(.gray)
+                    .opacity(0.1)
+                    .cornerRadius(10))
+                .padding()
                 
                 Spacer()
                 
@@ -70,7 +67,6 @@ struct AccountMainCameraView: View {
                             .font(.title)
                             .fontWeight(.semibold)
                     }
-                    .foregroundColor(.green)
                     .padding()
                 }
                 

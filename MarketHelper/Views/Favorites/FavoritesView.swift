@@ -9,22 +9,27 @@ import SwiftUI
 
 struct FavoritesView: View {
     @State var isStarred: Bool = true
+    @StateObject private var searchInsideHomeView = SearchFavoritesViewModel()
     
     var body: some View {
         NavigationStack {
-            VStack {
-                HomeView()
-                
-                // Sample Data
-//                List {
-//                    NavigationLink(destination: ItemDetailView()) {
-//                        ItemView(name: "춘천서부시장", whereTheMarketIs: "춘천")
-//                    }
-//                }
+            VStack {                
+                List {
+                    NavigationLink(destination: ItemDetailView(navigationTitle: "춘천중앙시장", locationName: "춘천시")) {
+                        ItemView(name: "춘천중앙시장", whereTheMarketIs: "춘천시")
+                    }
+                }
             }
             .navigationTitle("즐겨찾기")
+            .searchable(text: $searchInsideHomeView.searchText,
+                        placement: .navigationBarDrawer(displayMode: .automatic))
         }
     }
+}
+
+class SearchFavoritesViewModel: ObservableObject {
+    @Published var searchText = ""
+    // 검색 로직
 }
 
 #Preview {
