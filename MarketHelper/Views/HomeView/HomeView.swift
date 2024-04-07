@@ -19,10 +19,6 @@ struct HomeView: View {
                     NavigationLink(destination: ItemDetailView(navigationTitle: "춘천중앙시장", locationName: "춘천시")) {
                         ItemView(name: "춘천중앙시장", whereTheMarketIs: "춘천시")
                     }
-                    
-//                    NavigationLink(destination: ItemDetailView()) {
-//                        ItemView(name: "춘천서부시장", whereTheMarketIs: "춘천시")
-//                    }
                 }
             }
             .navigationTitle("홈")
