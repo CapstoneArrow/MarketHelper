@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10D44D32BDE81A100B587A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */; };
 		A16BD1982BC2B09200E235B9 /* MarketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BD1972BC2B09200E235B9 /* MarketsApp.swift */; };
 		A16BD19A2BC2B09200E235B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BD1992BC2B09200E235B9 /* ContentView.swift */; };
 		A16BD19C2BC2B09300E235B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16BD19B2BC2B09300E235B9 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A16BD1942BC2B09200E235B9 /* Markets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16BD1972BC2B09200E235B9 /* MarketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsApp.swift; sourceTree = "<group>"; };
 		A16BD1992BC2B09200E235B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		A16BD1962BC2B09200E235B9 /* Markets */ = {
 			isa = PBXGroup;
 			children = (
+				A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */,
 				A16BD1972BC2B09200E235B9 /* MarketsApp.swift */,
 				A16BD1992BC2B09200E235B9 /* ContentView.swift */,
 				A16BD1A62BC2B0B700E235B9 /* Views */,
@@ -189,7 +192,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					A16BD1932BC2B09200E235B9 = {
 						CreatedOnToolsVersion = 15.3;
@@ -224,6 +227,7 @@
 			files = (
 				A16BD1A02BC2B09300E235B9 /* Preview Assets.xcassets in Resources */,
 				A16BD19C2BC2B09300E235B9 /* Assets.xcassets in Resources */,
+				A10D44D32BDE81A100B587A1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -348,6 +353,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -375,6 +381,7 @@
 				CODE_SIGN_ENTITLEMENTS = Markets/Markets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Markets/Preview Content\"";
 				DEVELOPMENT_TEAM = KQHX6P6Q2H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -417,6 +424,7 @@
 				CODE_SIGN_ENTITLEMENTS = Markets/Markets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Markets/Preview Content\"";
 				DEVELOPMENT_TEAM = KQHX6P6Q2H;
 				ENABLE_HARDENED_RUNTIME = YES;
