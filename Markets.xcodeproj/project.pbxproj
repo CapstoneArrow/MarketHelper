@@ -28,6 +28,7 @@
 		A1CDA5302BDE195800BDE086 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A1CDA52F2BDE195800BDE086 /* FirebaseDatabase */; };
 		A1CDA5322BDE195800BDE086 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A1CDA5312BDE195800BDE086 /* FirebaseStorage */; };
 		A1CDA5342BDE195800BDE086 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A1CDA5332BDE195800BDE086 /* FirebaseStorageCombine-Community */; };
+		A1F1EF842BE3877C00537C50 /* FirebaseIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1EF832BE3877C00537C50 /* FirebaseIntegrationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A16BD1BB2BC2B1D000E235B9 /* AccountNumberCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberCameraViewController.swift; sourceTree = "<group>"; };
 		A16BD1BD2BC2B1EF00E235B9 /* DeveloperInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoView.swift; sourceTree = "<group>"; };
 		A16BD1C02BC2B20700E235B9 /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		A1F1EF832BE3877C00537C50 /* FirebaseIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseIntegrationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				A16BD1BF2BC2B1FA00E235B9 /* Nearby */,
 				A16BD1B62BC2B19100E235B9 /* AccountCamera */,
 				A16BD1B42BC2B18600E235B9 /* MorePageView.swift */,
+				A1F1EF832BE3877C00537C50 /* FirebaseIntegrationTest.swift */,
 				A16BD1BD2BC2B1EF00E235B9 /* DeveloperInfoView.swift */,
 			);
 			path = MorePage;
@@ -265,6 +268,7 @@
 				A16BD1B32BC2B17500E235B9 /* FavoritesView.swift in Sources */,
 				A16BD1982BC2B09200E235B9 /* MarketsApp.swift in Sources */,
 				A16BD1AD2BC2B13900E235B9 /* ItemView.swift in Sources */,
+				A1F1EF842BE3877C00537C50 /* FirebaseIntegrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
