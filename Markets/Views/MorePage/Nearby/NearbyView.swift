@@ -22,6 +22,7 @@ struct NearbyView: View {
                         MapPitchToggle()
                             .buttonBorderShape(.circle)
                     }
+                    .mapStyle(.standard(elevation: .realistic))
             }
             .navigationTitle("내 근처 정보")
             .onAppear {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A10D44D32BDE81A100B587A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */; };
+		A1269CDB2BE46AEB0077B8BC /* WeatherKitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1269CDA2BE46AEB0077B8BC /* WeatherKitTest.swift */; };
 		A16295A82BDE99C7002D217A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A16295A72BDE99C7002D217A /* FirebaseAnalytics */; };
 		A16295AA2BDE99C7002D217A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A16295A92BDE99C7002D217A /* FirebaseAnalyticsSwift */; };
 		A16BD1982BC2B09200E235B9 /* MarketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BD1972BC2B09200E235B9 /* MarketsApp.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1269CDA2BE46AEB0077B8BC /* WeatherKitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitTest.swift; sourceTree = "<group>"; };
 		A16BD1942BC2B09200E235B9 /* Markets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16BD1972BC2B09200E235B9 /* MarketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsApp.swift; sourceTree = "<group>"; };
 		A16BD1992BC2B09200E235B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1269CD92BE46ACF0077B8BC /* FeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1EF832BE3877C00537C50 /* FirebaseIntegrationTest.swift */,
+				A1269CDA2BE46AEB0077B8BC /* WeatherKitTest.swift */,
+			);
+			path = FeatureTests;
+			sourceTree = "<group>";
+		};
 		A16295A62BDE99C7002D217A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,10 +158,10 @@
 		A16BD1A92BC2B11400E235B9 /* MorePage */ = {
 			isa = PBXGroup;
 			children = (
+				A1269CD92BE46ACF0077B8BC /* FeatureTests */,
 				A16BD1BF2BC2B1FA00E235B9 /* Nearby */,
 				A16BD1B62BC2B19100E235B9 /* AccountCamera */,
 				A16BD1B42BC2B18600E235B9 /* MorePageView.swift */,
-				A1F1EF832BE3877C00537C50 /* FirebaseIntegrationTest.swift */,
 				A16BD1BD2BC2B1EF00E235B9 /* DeveloperInfoView.swift */,
 			);
 			path = MorePage;
@@ -261,6 +272,7 @@
 				A16BD1AF2BC2B14800E235B9 /* ItemDetailView.swift in Sources */,
 				A16BD1BE2BC2B1EF00E235B9 /* DeveloperInfoView.swift in Sources */,
 				A16BD1AB2BC2B12A00E235B9 /* HomeView.swift in Sources */,
+				A1269CDB2BE46AEB0077B8BC /* WeatherKitTest.swift in Sources */,
 				A16BD19A2BC2B09200E235B9 /* ContentView.swift in Sources */,
 				A16BD1BC2BC2B1D000E235B9 /* AccountNumberCameraViewController.swift in Sources */,
 				A16BD1B12BC2B15A00E235B9 /* ItemDetailMapView.swift in Sources */,

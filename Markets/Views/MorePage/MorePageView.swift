@@ -41,14 +41,23 @@ struct MorePageView: View {
                     }
                 }
                 
+                // 기능 프로토타입 및 테스트를 위한 내역
                 // Firebase 연동 테스트 용
-                // 연동 테스트에만 사용하고 삭제 예정
+                // 각 기능들 테스트에만 사용하고 삭제 예정
                 Section(header: Text("기능 테스트")) {
                     NavigationLink(destination: FirebaseIntegrationTest()) {
                         HStack {
                             Image(systemName: "flame.fill")
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.red)
                             Text("Firebase Test")
+                        }
+                    }
+                    
+                    NavigationLink(destination: WeatherKitTest()) {
+                        HStack {
+                            Image(systemName: "cloud.sun")
+                                .foregroundColor(.red)
+                            Text("WeatherKit Test")
                         }
                     }
                 }
