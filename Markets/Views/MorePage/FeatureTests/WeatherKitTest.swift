@@ -15,8 +15,7 @@ struct WeatherKitTest: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
-                
+                Text("Testing WeatherKit")
             }
             .navigationTitle("WeatherKit Test")
         }

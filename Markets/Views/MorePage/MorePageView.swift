@@ -45,7 +45,7 @@ struct MorePageView: View {
                 // Firebase 연동 테스트 용
                 // 각 기능들 테스트에만 사용하고 삭제 예정
                 Section(header: Text("기능 테스트")) {
-                    NavigationLink(destination: FirebaseIntegrationTest()) {
+                    NavigationLink(destination: FirebaseTestView()) {
                         HStack {
                             Image(systemName: "flame.fill")
                                 .foregroundColor(.red)
