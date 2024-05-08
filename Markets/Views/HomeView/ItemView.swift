@@ -35,7 +35,7 @@ struct ItemView: View {
 }
 
 #Preview {
-    ItemView(name: "예시 시장", whereTheMarketIs: "어딘가에 있지요")
+    ItemView(name: "시장 이름", whereTheMarketIs: "주소는 여기에")
 }
 
 
