@@ -20,7 +20,7 @@ struct ItemDetailView: View {
             ScrollView {
                 // iPad and others view
                 if sizeClass == .regular {
-                    HStack() {
+                    HStack {
                         Image("춘천중앙시장")
                             .resizable()
                             .scaledToFit()
@@ -41,7 +41,7 @@ struct ItemDetailView: View {
                             .cornerRadius(10))
                     // iPhone View
                 } else {
-                    VStack() {
+                    VStack {
                         Image("춘천중앙시장")
                             .resizable()
                             .scaledToFit()
@@ -61,7 +61,9 @@ struct ItemDetailView: View {
                             Text("지도")
                         }
                         .sheet(isPresented: $showingSheet) {
-                            MarketMapView()
+                            ItemDetailMapView(locationName: "한림대학교",
+                                              locationLatitude: 37.886734,
+                                              locationLongitude: 127.740939)
                         }
                         
                     }

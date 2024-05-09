@@ -33,8 +33,12 @@ struct HomeView: View {
                     }
                 }
                 
-                // 시장 보여주는 부분
-                Text("시장")
+                // 지역 보여주는 부분
+                // 강원도, 경기도, 경상남도, 경상북도, 광주광역시, 대구광역시, 대전광역시, 부산광역시
+                // 서울특별시, 세종특별자치시, 울산광역시, 인천광역시, 전라남도, 전라북도, 제주특별자치도, 충청남도, 충청북도
+                let regionList = ["강원도", "경기도", "경상남도", "경상북도", "광주광역시", "대구광역시", "대전광역시", "부산광역시", "서울특별시", "세종특별자치시", "울산광역시", "인천광역시", "전라남도", "전라북도", "제주특별자치도", "충청남도", "충청북도"]
+                
+                Text("지역")
                     .font(.title3)
                     .fontWeight(.bold)
                     .padding(.leading, 15)
@@ -42,8 +46,8 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
-                        ForEach(0..<10, id: \.self) { index in
-                            MarketItem(smallTitleName: "춘천중앙시장")
+                        ForEach(regionList, id: \.self) { region in
+                            RegionItem(smallTitleName: region)
                         }
                     }
                 }

@@ -52,6 +52,14 @@ struct MorePageView: View {
                             Text("Firebase Single Value")
                         }
                     }
+                    
+                    NavigationLink(destination: FirebaseMultipleValueView()) {
+                        HStack {
+                            Image(systemName: "flame.fill")
+                                .foregroundColor(.red)
+                            Text("Firebase Multiple Value")
+                        }
+                    }
                 }
             }
             .navigationTitle("더보기")

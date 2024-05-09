@@ -9,15 +9,15 @@ import Foundation
 
 class ObjectData: Codable, Hashable {
     var 시장명: String = ""
-    var 소재지도로명주소: String = ""
+    var 주차장보유여부: String = ""
     
     static func == (lhs: ObjectData, rhs: ObjectData) -> Bool {
-        return lhs.시장명 == rhs.시장명 && lhs.소재지도로명주소 == rhs.소재지도로명주소
+        return lhs.시장명 == rhs.시장명 && lhs.주차장보유여부 == rhs.주차장보유여부
     }
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(시장명)
-        hasher.combine(소재지도로명주소)
+        hasher.combine(주차장보유여부)
     }
 }
 
