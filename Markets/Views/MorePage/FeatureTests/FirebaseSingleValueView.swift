@@ -12,14 +12,22 @@ struct FirebaseSingleValueView: View {
     
     var body: some View {
         VStack {
-            if singleViewModel.value != nil {
-                Text(singleViewModel.value!)
+            if !singleViewModel.listObject.isEmpty {
+                VStack {
+                    ForEach(singleViewModel.listObject, id: \.self) { object in
+                        VStack {
+                            Text(object.전통시장데이터)
+                            Text(object.주차장정보데이터)
+                        }
+                        .padding()
+                    }
+                }
+            } else {
+                Text("Place to display our value")
                     .padding()
                     .background(Color.gray)
             }
-            Text("Place to display our value")
-                .padding()
-                .background(Color.gray)
+            
             
             Button {
                 singleViewModel.readValue()

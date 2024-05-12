@@ -11,59 +11,15 @@ import Foundation
 import SwiftUI
 
 struct FirebaseMultipleValueView: View {
-    @StateObject var viewModel = FirebaseSingleValueViewModel()
+    @ObservedObject var tradMarketData = TradMarketData()
     
     var body: some View {
         NavigationStack {
-            VStack {
-                if viewModel.object != nil {
-                    VStack {
-                        Text(viewModel.object!.시장명)
-                            .padding()
-                            .background(Color.gray)
-                    }
-                    
-                    VStack {
-                        Text(viewModel.object!.주차장보유여부)
-                            .padding()
-                            .background(Color.gray)
-                    }
-                } else {
-                    Text("Place to display our value")
-                        .padding()
-                        .background(Color.gray)
-                }
-                
-                Button {
-                    viewModel.readObject()
-                } label: {
-                    Text("Read")
-                }
-                
-                if !viewModel.listObject.isEmpty {
-                    VStack {
-                        ForEach(viewModel.listObject, id: \.self) { object in
-                            VStack {
-                                Text(object.시장명)
-                                Text(object.주차장보유여부)
-                            }
-                        }
-                    }
-                } else {
-                    Text("Place to display our value")
-                        .padding()
-                        .background(Color.gray)
-                }
-                
-                Button {
-                    viewModel.observeListObject()
-                } label: {
-                    Text("Read")
-                }
-                
+            List(tradMarketData.marketNames, id: \.self) { marketName in
+                Text(marketName)
             }
-            .navigationTitle("Firebase Test")
         }
+        .navigationTitle("Firebase Test")
     }
 }
 
