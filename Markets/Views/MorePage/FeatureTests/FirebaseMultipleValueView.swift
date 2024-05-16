@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 
 struct FirebaseMultipleValueView: View {
-    @ObservedObject var tradMarketData = TradMarketData()
+    @ObservedObject var tradMarketData = MarketNames()
     
     var body: some View {
         NavigationStack {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A10169E42BE69AA60014458B /* ObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10169E32BE69AA60014458B /* ObjectData.swift */; };
+		A108EEF72BF5DD7400C3259F /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108EEF62BF5DD7300C3259F /* FirebaseModel.swift */; };
 		A10D44D32BDE81A100B587A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */; };
 		A12A908D2BECA1EF00C68B47 /* FirebaseSingleValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A908C2BECA1EF00C68B47 /* FirebaseSingleValueView.swift */; };
 		A148DD4E2BE60B3500C5456D /* FirebaseSingleValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148DD4D2BE60B3500C5456D /* FirebaseSingleValueViewModel.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A10169E32BE69AA60014458B /* ObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ObjectData.swift; path = Markets/ObjectData.swift; sourceTree = SOURCE_ROOT; };
+		A108EEF62BF5DD7300C3259F /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseModel.swift; path = Markets/FirebaseModel.swift; sourceTree = "<group>"; };
 		A10D44D22BDE81A100B587A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A12A908C2BECA1EF00C68B47 /* FirebaseSingleValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSingleValueView.swift; sourceTree = "<group>"; };
 		A148DD4D2BE60B3500C5456D /* FirebaseSingleValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSingleValueViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		A16BD18B2BC2B09200E235B9 = {
 			isa = PBXGroup;
 			children = (
+				A108EEF62BF5DD7300C3259F /* FirebaseModel.swift */,
 				A16BD1962BC2B09200E235B9 /* Markets */,
 				A16BD1952BC2B09200E235B9 /* Products */,
 				A16295A62BDE99C7002D217A /* Frameworks */,
@@ -298,6 +301,7 @@
 				A10169E42BE69AA60014458B /* ObjectData.swift in Sources */,
 				A16BD1B52BC2B18600E235B9 /* MorePageView.swift in Sources */,
 				A15C822F2BEBCDF900B3E277 /* RegionItem.swift in Sources */,
+				A108EEF72BF5DD7400C3259F /* FirebaseModel.swift in Sources */,
 				A148DD4E2BE60B3500C5456D /* FirebaseSingleValueViewModel.swift in Sources */,
 				A12A908D2BECA1EF00C68B47 /* FirebaseSingleValueView.swift in Sources */,
 				A16BD1AF2BC2B14800E235B9 /* ItemDetailView.swift in Sources */,
