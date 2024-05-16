@@ -18,7 +18,9 @@ struct ItemView: View {
             VStack(alignment: .leading) {
                 Text(name)
                     .fontWeight(.bold)
+                    .foregroundColor(.primary)
                 Text(whereTheMarketIs)
+                    .foregroundColor(.secondary)
             }
             
             Spacer()

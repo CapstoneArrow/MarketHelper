@@ -60,6 +60,14 @@ struct MorePageView: View {
                             Text("Firebase Multiple Value")
                         }
                     }
+                    
+                    NavigationLink(destination: FirebaseImageViewTest(imageName: "강릉동부시장")) {
+                        HStack {
+                            Image(systemName: "flame.fill")
+                                .foregroundColor(.red)
+                            Text("Firebase Image Fetch Test")
+                        }
+                    }
                 }
             }
             .navigationTitle("더보기")

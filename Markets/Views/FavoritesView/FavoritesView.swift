@@ -15,7 +15,13 @@ struct FavoritesView: View {
         NavigationStack {
             VStack {
                 List {
-                    NavigationLink(destination: ItemDetailView(navigationTitle: "춘천중앙시장", locationName: "춘천시")) {
+                    NavigationLink(destination: ItemDetailView(marketName: "한림대학교",
+                                                               marketAddress: "어디어디 주소",
+                                                               marketLatitude: 37.886734,
+                                                               marketLongitude: 127.740939,
+                                                               isThereToilet: "Y",
+                                                               isThereParkingLot: "Y",
+                                                               marketWhichCard: "온누리상품권")) {
                         ItemView(name: "춘천중앙시장", whereTheMarketIs: "춘천시")
                     }
                 }

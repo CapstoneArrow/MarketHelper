@@ -12,7 +12,13 @@ struct FestivalItem: View {
     
     var body: some View {
         VStack {
-            NavigationLink(destination: ItemDetailView(navigationTitle: "시장 이름", locationName: "시장 위치")) {
+            NavigationLink(destination: ItemDetailView(marketName: "한림대학교",
+                                                       marketAddress: "어디어디 주소",
+                                                       marketLatitude: 37.886734,
+                                                       marketLongitude: 127.740939,
+                                                       isThereToilet: "Y",
+                                                       isThereParkingLot: "Y",
+                                                       marketWhichCard: "온누리상품권")) {
                 VStack(alignment: .leading) {
                     // 축제 관련 이미지
                     Image(largeTitleName)

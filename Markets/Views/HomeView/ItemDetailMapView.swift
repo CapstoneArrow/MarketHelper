@@ -11,14 +11,16 @@ import MapKit
 struct ItemDetailMapView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    var locationName: String
-    var locationLatitude: CLLocationDegrees
-    var locationLongitude: CLLocationDegrees
+    var marketName: String
+    var marketLatitude: CLLocationDegrees
+    var marketLongitude: CLLocationDegrees
     
     var body: some View {
         NavigationStack {
             Map {
-                Marker(locationName, coordinate: CLLocationCoordinate2D(latitude: locationLatitude, longitude: locationLongitude))
+                Marker(marketName,
+                       coordinate: CLLocationCoordinate2D(latitude: marketLatitude,
+                                                          longitude: marketLongitude))
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -29,6 +31,8 @@ struct ItemDetailMapView: View {
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle(marketName)
             .interactiveDismissDisabled(true)
         }
     }
@@ -36,7 +40,7 @@ struct ItemDetailMapView: View {
 
 
 #Preview {
-    ItemDetailMapView(locationName: "한림대학교",
-                      locationLatitude: 37.886734,
-                      locationLongitude: 127.740939)
+    ItemDetailMapView(marketName: "한림대학교",
+                      marketLatitude: 37.886734,
+                      marketLongitude: 127.740939)
 }
