@@ -28,7 +28,7 @@ struct HomeView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
                         ForEach(0..<10, id: \.self) { index in
-                            FestivalItem(largeTitleName: "춘천마임축제")
+                            FestivalItem(festivalName: "춘천마임축제")
                         }
                     }
                 }

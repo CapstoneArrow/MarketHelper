@@ -54,3 +54,46 @@ class MarketInfo: ObservableObject {
         }
     }
 }
+
+class FestivalInfo: ObservableObject {
+    @Published var festivalName: [String] = [] // 축제명
+    @Published var festivalHow: [String] = [] // 개최방식
+    @Published var festivalWhen: [String] = [] // 개최기간
+    @Published var festivalWhere: [String] = [] // 개최장소
+    @Published var festivalType: [String] = [] // 축제유형
+    @Published var festivalPhoneNumber: [String] = [] // 연락처
+    
+    private let localFestivalRef: DatabaseReference
+    
+    init() {
+        let festivalDatabase = Database.database().reference()
+        localFestivalRef = festivalDatabase.child("지역축제정보데이터")
+        
+        localFestivalRef.observe(.childAdded) { [weak self] snapshot in
+            guard let self = self else { return }
+            
+            if let festivalData = snapshot.value as? [String: Any],
+               let nameFestival = festivalData["축제명"] as? String?,
+               let unwrappedFestivalName = nameFestival,
+               !unwrappedFestivalName.isEmpty,
+               !self.festivalName.contains(unwrappedFestivalName),
+               
+               let addressFestival = festivalData["개최장소"] as? String?,
+               let unwrappedFestivalAddress = addressFestival,
+               !unwrappedFestivalAddress.isEmpty,
+               
+               let howFestival = festivalData["개최방식"] as? String,
+               let whenFestival = festivalData["개최기간"] as? String,
+               let typeFestival = festivalData["축제유형"] as? String,
+               let numberFestival = festivalData["연락처"] as? String {
+                self.festivalName.append(unwrappedFestivalName)
+                self.festivalWhere.append(unwrappedFestivalAddress)
+                self.festivalHow.append(howFestival)
+                self.festivalWhen.append(whenFestival)
+                self.festivalType.append(typeFestival)
+                self.festivalPhoneNumber.append(numberFestival)
+            }
+            
+        }
+    }
+}

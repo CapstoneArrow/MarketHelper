@@ -37,6 +37,7 @@
 		A1CDA5342BDE195800BDE086 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A1CDA5332BDE195800BDE086 /* FirebaseStorageCombine-Community */; };
 		A1D154DF2BF6525D0054B55A /* FirebaseImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D154DE2BF6525D0054B55A /* FirebaseImageModel.swift */; };
 		A1D154E12BF653040054B55A /* FirebaseImageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D154E02BF653040054B55A /* FirebaseImageViewTest.swift */; };
+		A1EC938F2BF9CD34008B12E8 /* FestivalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC938E2BF9CD34008B12E8 /* FestivalDetailView.swift */; };
 		A1EF989B2BED2B34008254D8 /* MarketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF989A2BED2B34008254D8 /* MarketListView.swift */; };
 		A1F1EF842BE3877C00537C50 /* FirebaseMultipleValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1EF832BE3877C00537C50 /* FirebaseMultipleValueView.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		A16BD1C02BC2B20700E235B9 /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
 		A1D154DE2BF6525D0054B55A /* FirebaseImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageModel.swift; sourceTree = "<group>"; };
 		A1D154E02BF653040054B55A /* FirebaseImageViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageViewTest.swift; sourceTree = "<group>"; };
+		A1EC938E2BF9CD34008B12E8 /* FestivalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FestivalDetailView.swift; path = Markets/Views/HomeView/FestivalDetailView.swift; sourceTree = SOURCE_ROOT; };
 		A1EF989A2BED2B34008254D8 /* MarketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListView.swift; sourceTree = "<group>"; };
 		A1F1EF832BE3877C00537C50 /* FirebaseMultipleValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMultipleValueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,11 +134,11 @@
 				A16BD1972BC2B09200E235B9 /* MarketsApp.swift */,
 				A16BD1992BC2B09200E235B9 /* ContentView.swift */,
 				A10169E32BE69AA60014458B /* ObjectData.swift */,
+				A1D154DE2BF6525D0054B55A /* FirebaseImageModel.swift */,
 				A16BD1A62BC2B0B700E235B9 /* Views */,
 				A16BD19B2BC2B09300E235B9 /* Assets.xcassets */,
 				A16BD19D2BC2B09300E235B9 /* Markets.entitlements */,
 				A16BD19E2BC2B09300E235B9 /* Preview Content */,
-				A1D154DE2BF6525D0054B55A /* FirebaseImageModel.swift */,
 			);
 			path = Markets;
 			sourceTree = "<group>";
@@ -214,6 +216,7 @@
 			children = (
 				A15C822E2BEBCDF900B3E277 /* RegionItem.swift */,
 				A15C82302BEBD9F900B3E277 /* FestivalItem.swift */,
+				A1EC938E2BF9CD34008B12E8 /* FestivalDetailView.swift */,
 				A16BD1AC2BC2B13900E235B9 /* ItemView.swift */,
 			);
 			path = Items;
@@ -316,6 +319,7 @@
 				A16BD1BE2BC2B1EF00E235B9 /* DeveloperInfoView.swift in Sources */,
 				A16BD1AB2BC2B12A00E235B9 /* HomeView.swift in Sources */,
 				A16BD19A2BC2B09200E235B9 /* ContentView.swift in Sources */,
+				A1EC938F2BF9CD34008B12E8 /* FestivalDetailView.swift in Sources */,
 				A16BD1BC2BC2B1D000E235B9 /* AccountNumberCameraViewController.swift in Sources */,
 				A16BD1B12BC2B15A00E235B9 /* ItemDetailMapView.swift in Sources */,
 				A16BD1BA2BC2B1BC00E235B9 /* AccountNumberCameraView.swift in Sources */,

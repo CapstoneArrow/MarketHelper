@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FestivalItem: View {
-    var largeTitleName: String
+    var festivalName: String
     
     var body: some View {
         VStack {
@@ -21,14 +21,14 @@ struct FestivalItem: View {
                                                        marketWhichCard: "온누리상품권")) {
                 VStack(alignment: .leading) {
                     // 축제 관련 이미지
-                    Image(largeTitleName)
+                    Image(festivalName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 180)
                         .cornerRadius(10)
                     
                     // 축제 이름
-                    Text(largeTitleName)
+                    Text(festivalName)
                         .font(.headline)
                         .fontWeight(.medium)
                         .foregroundColor(.primary)
@@ -46,5 +46,5 @@ struct FestivalItem: View {
 }
 
 #Preview {
-    FestivalItem(largeTitleName: "춘천마임축제")
+    FestivalItem(festivalName: "춘천마임축제")
 }

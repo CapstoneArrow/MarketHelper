@@ -5,6 +5,9 @@
 //  Created by Andy on 5/5/24.
 //
 
+// DELETE THIS CODE
+// Won't be needing this code anymore
+
 import Foundation
 
 class ObjectData: Codable, Hashable {

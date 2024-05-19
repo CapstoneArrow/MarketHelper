@@ -12,7 +12,7 @@ struct ItemDetailView: View {
     @State private var showingSheet = false
     @Environment(\.horizontalSizeClass) var sizeClass
     
-    var marketName: String // also works as name for images
+    var marketName: String // 이미지 이름 역할도 함
     var marketAddress: String
     var marketLatitude: Double
     var marketLongitude: Double
@@ -107,44 +107,37 @@ struct ItemDetailView: View {
                         if isThereParkingLot == "Y" {
                             Spacer()
                             
-                            Image(systemName: "car")
-                                .font(.title)
-                                .foregroundColor(.purple)
-                                .background(
-                                    Rectangle()
-                                        .foregroundColor(.gray)
-                                        .opacity(0.1)
-                                        .cornerRadius(10)
-                                        .frame(width: 80, height: 50))
-                                .shadow(radius: 5)
+                            VStack {
+                                Image(systemName: "car")
+                                    .font(.title)
+                                    .foregroundColor(.blue)
+                                Text("주차장 정보")
+                                    .font(.caption)
+                            }
                         }
                         if isThereToilet == "Y" {
                             Spacer()
                             
-                            Image(systemName: "toilet.fill")
-                                .font(.title)
-                                .foregroundColor(.secondary)
-                                .background(
-                                    Rectangle()
-                                        .foregroundColor(.gray)
-                                        .opacity(0.1)
-                                        .cornerRadius(10)
-                                        .frame(width: 80, height: 50))
-                                .shadow(radius: 5)
+                            VStack {
+                                Image(systemName: "toilet.fill")
+                                    .font(.title)
+                                    .foregroundColor(.blue)
+                                
+                                Text("공중화장실")
+                                    .font(.caption)
+                            }
                         }
                         
                         if !(marketWhichCard == "없음") {
                             Spacer()
-                            Image(systemName: "giftcard")
-                                .font(.title)
-                                .foregroundColor(.red)
-                                .background(
-                                    Rectangle()
-                                        .foregroundColor(.gray)
-                                        .opacity(0.1)
-                                        .cornerRadius(10)
-                                        .frame(width: 80, height: 50))
-                                .shadow(radius: 5)
+                            
+                            VStack {
+                                Image(systemName: "giftcard")
+                                    .font(.title)
+                                    .foregroundColor(.red)
+                                Text(marketWhichCard)
+                                    .font(.caption)
+                            }
                         }
                         
                         Spacer()
