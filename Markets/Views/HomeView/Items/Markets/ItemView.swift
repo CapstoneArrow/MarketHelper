@@ -60,6 +60,7 @@ struct ItemView: View {
                     .foregroundColor(isStarred ? .yellow : .secondary)
             }
             .buttonStyle(PlainButtonStyle())
+            .hoverEffect()
         }
     }
 }

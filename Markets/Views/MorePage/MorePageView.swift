@@ -40,35 +40,6 @@ struct MorePageView: View {
                         }
                     }
                 }
-                
-                // 기능 프로토타입 및 테스트를 위한 내역
-                // Firebase 연동 테스트 용
-                // 각 기능들 테스트에만 사용하고 삭제 예정
-                Section(header: Text("기능 테스트")) {
-                    NavigationLink(destination: FirebaseSingleValueView()) {
-                        HStack {
-                            Image(systemName: "flame.fill")
-                                .foregroundColor(.red)
-                            Text("Firebase Single Value")
-                        }
-                    }
-                    
-                    NavigationLink(destination: FirebaseMultipleValueView()) {
-                        HStack {
-                            Image(systemName: "flame.fill")
-                                .foregroundColor(.red)
-                            Text("Firebase Multiple Value")
-                        }
-                    }
-                    
-                    NavigationLink(destination: FirebaseImageViewTest(imageName: "강릉동부시장")) {
-                        HStack {
-                            Image(systemName: "flame.fill")
-                                .foregroundColor(.red)
-                            Text("Firebase Image Fetch Test")
-                        }
-                    }
-                }
             }
             .navigationTitle("더보기")
         }

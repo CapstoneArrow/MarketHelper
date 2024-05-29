@@ -12,6 +12,7 @@ import FirebaseDatabaseSwift
 class MarketInfo: ObservableObject {
     @Published var marketNames: [String] = [] // 시장명
     @Published var marketAddresses: [String] = [] // 시장 도로명 주소
+    @Published var marketOldAddresses: [String] = [] // 시장 지번 주소
     @Published var marketLatitude: [Double] = [] // 위도
     @Published var marketLongitude: [Double] = [] // 경도
     @Published var isThereToilet: [String] = [] // 화장실 보유 여부
@@ -37,6 +38,10 @@ class MarketInfo: ObservableObject {
                let unwrappedAddress = address,
                !unwrappedAddress.isEmpty,
                
+               let oldAddress = marketData["소재지지번주소"] as? String?,
+               let unwrappedOldAddress = oldAddress,
+               !unwrappedAddress.isEmpty,
+               
                let latitude = marketData["Latitude"] as? Double,
                let longitude = marketData["Longitude"] as? Double,
                let toilet = marketData["공중화장실보유여부"] as? String,
@@ -44,13 +49,13 @@ class MarketInfo: ObservableObject {
                let card = marketData["사용가능상품권"] as? String {
                 self.marketNames.append(unwrappedMarketName)
                 self.marketAddresses.append(unwrappedAddress)
+                self.marketOldAddresses.append(unwrappedOldAddress)
                 self.marketLatitude.append(latitude)
                 self.marketLongitude.append(longitude)
                 self.isThereToilet.append(toilet)
                 self.isThereParkingLot.append(parking)
                 self.marketWhichCard.append(card)
             }
-            
         }
     }
 }

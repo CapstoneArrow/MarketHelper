@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MarketListView: View {
     @ObservedObject var marketData = MarketInfo()
+    
     var titleOfRegion: String
 
     var body: some View {
@@ -26,6 +27,7 @@ struct MarketListView: View {
                             ItemView(name: marketData.marketNames[index],
                                      whereTheMarketIs: marketData.marketAddresses[index])
                             .padding()
+                            .hoverEffect()
                         }
                     }
                 }

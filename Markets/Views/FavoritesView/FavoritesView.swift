@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoritesView: View {
     @StateObject private var searchInsideHomeView = SearchFavoritesViewModel()
-    @State var isStarred: Bool = false
+    @State var isStarred: Bool = true
     
     var body: some View {
         NavigationStack {
