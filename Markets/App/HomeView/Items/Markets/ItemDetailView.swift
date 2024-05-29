@@ -64,8 +64,12 @@ struct ItemDetailView: View {
                             showingSheet = true
                         } label: {
                             HStack {
-                                Image(systemName: "location.fill")
+                                Image("locationicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30)
                                 Text(marketAddress)
+                                    .foregroundColor(.primary)
                             }
                             .font(.title3)
                             .padding(.bottom)
@@ -93,9 +97,10 @@ struct ItemDetailView: View {
                             Spacer()
                             
                             VStack {
-                                Image(systemName: "car")
-                                    .font(.title)
-                                    .foregroundColor(.blue)
+                                Image("parkingicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
                                 Text("주차장 정보")
                                     .font(.caption)
                             }
@@ -104,11 +109,10 @@ struct ItemDetailView: View {
                             Spacer()
                             
                             VStack {
-                                Image(systemName: "figure.dress.line.vertical.figure")
-                                    .font(.title)
-                                    .foregroundColor(.primary)
-                                    
-                                
+                                Image("restroomicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
                                 Text("공중화장실")
                                     .font(.caption)
                             }
@@ -118,9 +122,10 @@ struct ItemDetailView: View {
                             Spacer()
                             
                             VStack {
-                                Image(systemName: "giftcard")
-                                    .font(.title)
-                                    .foregroundColor(.red)
+                                Image("vouchericon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
                                 Text(marketWhichCard)
                                     .font(.caption)
                             }
@@ -169,8 +174,12 @@ struct ItemDetailView: View {
                             showingSheet = true
                         } label: {
                             HStack {
-                                Image(systemName: "location.fill")
+                                Image("locationicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30)
                                 Text(marketAddress)
+                                    .foregroundColor(.primary)
                             }
                             .font(.title3)
                             .padding(.bottom)
@@ -198,9 +207,10 @@ struct ItemDetailView: View {
                             Spacer()
                             
                             VStack {
-                                Image(systemName: "car")
-                                    .font(.title)
-                                    .foregroundColor(.blue)
+                                Image("parkingicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
                                 Text("주차장 정보")
                                     .font(.caption)
                             }
@@ -209,11 +219,10 @@ struct ItemDetailView: View {
                             Spacer()
                             
                             VStack {
-                                Image(systemName: "figure.dress.line.vertical.figure")
-                                    .font(.title)
-                                    .foregroundColor(.primary)
-                                    
-                                
+                                Image("restroomicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
                                 Text("공중화장실")
                                     .font(.caption)
                             }
@@ -223,9 +232,10 @@ struct ItemDetailView: View {
                             Spacer()
                             
                             VStack {
-                                Image(systemName: "giftcard")
-                                    .font(.title)
-                                    .foregroundColor(.red)
+                                Image("vouchericon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
                                 Text(marketWhichCard)
                                     .font(.caption)
                             }
