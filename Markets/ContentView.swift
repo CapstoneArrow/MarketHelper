@@ -21,7 +21,6 @@ struct ContentView: View {
                                 .foregroundColor(.blue)
                             Text("홈")
                         }
-                        
                     }
                     
                     NavigationLink(destination: FavoritesView()) {

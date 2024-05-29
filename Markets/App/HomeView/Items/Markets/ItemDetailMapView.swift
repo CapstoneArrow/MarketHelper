@@ -22,6 +22,13 @@ struct ItemDetailMapView: View {
                        coordinate: CLLocationCoordinate2D(latitude: marketLatitude,
                                                           longitude: marketLongitude))
             }
+            .mapControls {
+                MapCompass()
+                MapUserLocationButton()
+                    .buttonBorderShape(.circle)
+                MapPitchToggle()
+                    .buttonBorderShape(.circle)
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
