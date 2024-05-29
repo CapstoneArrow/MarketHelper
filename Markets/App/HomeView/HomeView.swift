@@ -9,10 +9,6 @@ import SwiftUI
 import VisionKit
 
 struct HomeView: View {
-    @StateObject private var searchInsideHomeView = SearchHomeViewModel()
-    
-    //    var categoryName: String
-    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
@@ -67,11 +63,6 @@ struct HomeView: View {
             Spacer()
         }
     }
-}
-
-class SearchHomeViewModel: ObservableObject {
-    @Published var searchText = ""
-    // 검색 로직
 }
 
 #Preview {
